@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .flex-anim{
+    display: flex;
+    top: -100px;
+    z-index: -1;
+}
+
+.flex-anim-none{
+    display: flex;
+    top: 65px;
+    z-index: -1;
+} */
+
+.flex-show{
+    display: flex;
+    animation: nav-anim 0.3s;
+    /* z-index: -1; */
+}
+
+@keyframes nav-anim {
+    
+    0%{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
