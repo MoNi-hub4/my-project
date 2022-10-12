@@ -13,6 +13,13 @@ navBtn.addEventListener('click', () => {
     menuBar.classList.toggle("flex-show");
 })
 
+
+document.addEventListener('click', (event)=> {
+    if (event.target.closest("#menu")) return
+    menuBar.classList.remove("flex-show");
+    menuBar.classList.add("hidden");
+})
+
 // navBtn.addEventListener('click', () => {
 //     menuBar.classList.toggle('hidden');
 // })
